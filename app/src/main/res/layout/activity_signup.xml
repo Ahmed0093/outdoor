@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.board.out.outdoormanger.MainActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/register_page_toolbar"/>
+
+    <TextView
+        android:id="@+id/createtextview"
+        android:layout_below="@+id/register_page_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text=" Create New Account"
+        />
+    <EditText
+        android:id="@+id/nameedittext"
+        android:layout_below="@+id/createtextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/emailedittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/nameedittext"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordedittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailedittext"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/checkmangeruallevel"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordedittext">
+        <CheckBox android:id="@+id/checkbox_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mang 1"
+            />
+        <CheckBox android:id="@+id/checkbox_finance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mang 2" />
+        <CheckBox android:id="@+id/checkbox_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mang 2" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/createaccountbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkmangeruallevel"
+        android:layout_centerHorizontal="true"
+        android:text="Create  account"
+        android:textSize="20dp"
+        android:textColor="#fffefe"
+        android:layout_marginTop="10dp"
+        android:background="#ff3122"
+        />
+
+
+</RelativeLayout>
